@@ -36,8 +36,8 @@ def main():
                 ))
             print("Done!")
 
-# Set the schedule, ex: schedule.every(5).minutes.do(job)
-        schedule.every().hour.do(job)
+# Set the schedule, ex: schedule.every(5).hours.do(job)
+        schedule.every().day.do(job)
 
         job() # Launch immediately
         while True:
